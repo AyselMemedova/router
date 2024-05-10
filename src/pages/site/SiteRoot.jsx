@@ -7,9 +7,9 @@ const SiteRoot = () => {
   return (
     <div>
       <React.Fragment>
-        <Header/>
-        <Outlet/>
-        <Footer/>
+        <Header />
+        <Outlet />
+        <Footer />
       </React.Fragment>
     </div>
   )

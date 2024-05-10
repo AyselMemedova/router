@@ -1,0 +1,43 @@
+.all_navbar{
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.aysel__header{
+    width: 100% ;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.navbar_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar_list_shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    /* margin: 5px; */
+    background-color: white;
+}
+a{
+    text-decoration: none;
+
+}

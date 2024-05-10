@@ -6,40 +6,56 @@ import Products from "../pages/admin/Products/Products";
 import Users from "../pages/admin/Users/Users";
 import AdminRoot from "../pages/admin/AdminRoot";
 import SiteRoot from "../pages/site/SiteRoot";
+import Error from "../pages/Error/Error";
+import Detail from "../pages/site/Detail/Detail";
+import AddProducts from "../pages/admin/AddProducts/AddProducts";
 
 const ROUTES = [
   {
     path: "/",
-    element:<SiteRoot/>,
+    element: <SiteRoot />,
     children: [
       {
         path: "",
         element: <Home />,
-      },{
-        path:"shop",
-        element:<Shop/>
-      }
+      },
+      {
+        path: "shop",
+        element: <Shop />,
+      },
+      {
+        path: "details/:id",
+        element: <Detail />,
+      },
+      {
+        path: "*",
+        element: <Error />,
+      },
     ],
   },
 
   {
-    path:"/admin",
-    element:<AdminRoot/>,
-    children:[{
-        path:"",
-        children:<Dashboard/>
-    },
-    {
-        path:"products",
-        children:<Products/> 
-    },
-    {
-        path:"users",
-        children:<Users/> 
-    }]
-  }
-  
+    path: "/admin",
+    element: <AdminRoot />,
+    children: [
+      {
+        path: "",
+        element: <Dashboard />,
+      },
+      {
+        path: "products",
+        element: <Products />,
+      },
+      {
+        path: "users",
+        element: <Users />,
+      },
+      {
+        path:"add",
+        element:<AddProducts/>
+      },
+    ],
+  },
 ];
 
-
-export default ROUTES
+export default ROUTES;
